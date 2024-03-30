@@ -1,17 +1,25 @@
 :root {
-    --color-brand-50: #28154b;
+    /* Indigo */
+    --color-brand-50: #fcf8ff;
+    --color-brand-100: #7553eb1c;
+    --color-brand-200: #e59285ad;
+    --color-brand-500: #e59285e3;
+    --color-brand-600: #e46956;
+    --color-brand-700: #da503b;
+    --color-brand-800: #4c1c95;
+    --color-brand-900: #3c2b7d;
 
-    --color-grey-0: #0c0d08;
-
-    --color-grey-100: #171614;
-    --color-grey-200: #2c2a26;
-    --color-grey-300: #6b7280;
-    --color-grey-400: #b0b0b0;
-    --color-grey-500: #9ca3af;
-    --color-grey-600: #fff;
-    --color-grey-700: #fff;
-    --color-grey-800: #fff;
-    --color-grey-900: #fff;
+    /* Grey */
+    --color-grey-0: #fff;
+    --color-grey-20: #f7f7f7;
+    --color-grey-50: #f5f5f5;
+    --color-grey-100: #d9d9d9;
+    --color-grey-200: #d4d4d4;
+    --color-grey-300: #a1a1a1;
+    --color-grey-400: #737373;
+    --color-grey-500: #41413f;
+    --color-grey-600: #262625;
+    --color-grey-700: #121212;
 
     --backdrop-color: rgba(0, 0, 0, 0.3);
 
@@ -21,48 +29,6 @@
 
     --image-grayscale: 10%;
     --image-opacity: 90%;
-    /* --color-grey-800: #1f2937; */
-    /* --color-grey-900: #111827; */
-
-    /* --color-blue-100: #e0f2fe; */
-    /* --color-blue-100: #38bdf826;
-  --color-blue-700: #38BDF8; */
-    --color-blue-100: rgba(14, 165, 233, 0.1);
-    --color-blue-700: #0ea5e9;
-    /* --color-green-100: #DBFFE8; */
-    /* --color-green-100: #4ade8036;
-  --color-green-700: #4ADE80; */
-    --color-green-100: rgba(16, 185, 129, 0.1);
-    --color-green-700: #10b981;
-    /* --color-yellow-100: #FEF7DA; */
-    --color-yellow-100: rgba(255, 152, 0, 0.1);
-    --color-yellow-700: #ff9800;
-    --color-pink-100: rgba(240, 0, 185, 0.1);
-    --color-pink-700: #f000b9;
-
-    --color-silver-100: #374151;
-    --color-silver-700: #f3f4f6;
-    --color-indigo-100: #3730a3;
-    --color-indigo-700: #e0e7ff;
-
-    --color-red-100: #da262624;
-    --color-red-700: #da2626;
-    --color-red-800: #991b1b;
-
-    --backdrop-color: rgba(255, 255, 255, 0.1);
-
-    --shadow-sm: 2px 4px 15px rgba(65, 65, 63, 0.1);
-    --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
-
-    --border-radius-xs: 5px;
-    --border-radius-sm: 10px;
-    --border-radius-md: 15px;
-    --border-radius-lg: 20px;
-
-    /* For dark mode */
-    --image-grayscale: 0;
-    --image-opacity: 100%;
 }
 
 span,
@@ -86,7 +52,7 @@ button {
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5% !important;
 }
 
 body {
@@ -108,31 +74,6 @@ body {
 }
 body:lang(ar) {
     direction: rtl;
-}
-/* .ar body{
-    font-family: "tajwal", sans-serif;
-    
-  } */
-::-webkit-scrollbar {
-    width: 6px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    /* box-shadow: inset 0 0 2px grey;  */
-    border-radius: 10px;
-    background: #faf9f5;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #ece4c4;
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #fbe695;
 }
 
 .light-bg-green {
@@ -215,41 +156,11 @@ img {
     filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
 
-/* FOR DARK MODE*/
-
-.light-mode:root {
-    /* Indigo */
-    --color-brand-50: #fcf8ff;
-    --color-brand-100: #7553eb1c;
-    --color-brand-200: #c4b5fd;
-    --color-brand-500: #a78bfb;
-    --color-brand-600: #7c3aed;
-    --color-brand-700: #5b21b6;
-    --color-brand-800: #4c1c95;
-    --color-brand-900: #3c2b7d;
-
-    /* Grey */
-    --color-grey-0: #fff;
-    --color-grey-20: #f7f7f7;
-    --color-grey-50: #f5f5f5;
-    --color-grey-100: #d9d9d9;
-    --color-grey-200: #d4d4d4;
-    --color-grey-300: #a1a1a1;
-    --color-grey-400: #737373;
-    --color-grey-500: #41413f;
-    --color-grey-600: #262625;
-    --color-grey-700: #121212;
-
-    --backdrop-color: rgba(0, 0, 0, 0.3);
-
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.4);
-
-    --image-grayscale: 10%;
-    --image-opacity: 90%;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
-
 /*********************************************
  animations
 *********************************************/
