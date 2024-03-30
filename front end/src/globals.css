@@ -1,0 +1,337 @@
+:root {
+    --color-brand-50: #28154b;
+
+    --color-grey-0: #0c0d08;
+
+    --color-grey-100: #171614;
+    --color-grey-200: #2c2a26;
+    --color-grey-300: #6b7280;
+    --color-grey-400: #b0b0b0;
+    --color-grey-500: #9ca3af;
+    --color-grey-600: #fff;
+    --color-grey-700: #fff;
+    --color-grey-800: #fff;
+    --color-grey-900: #fff;
+
+    --backdrop-color: rgba(0, 0, 0, 0.3);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.4);
+
+    --image-grayscale: 10%;
+    --image-opacity: 90%;
+    /* --color-grey-800: #1f2937; */
+    /* --color-grey-900: #111827; */
+
+    /* --color-blue-100: #e0f2fe; */
+    /* --color-blue-100: #38bdf826;
+  --color-blue-700: #38BDF8; */
+    --color-blue-100: rgba(14, 165, 233, 0.1);
+    --color-blue-700: #0ea5e9;
+    /* --color-green-100: #DBFFE8; */
+    /* --color-green-100: #4ade8036;
+  --color-green-700: #4ADE80; */
+    --color-green-100: rgba(16, 185, 129, 0.1);
+    --color-green-700: #10b981;
+    /* --color-yellow-100: #FEF7DA; */
+    --color-yellow-100: rgba(255, 152, 0, 0.1);
+    --color-yellow-700: #ff9800;
+    --color-pink-100: rgba(240, 0, 185, 0.1);
+    --color-pink-700: #f000b9;
+
+    --color-silver-100: #374151;
+    --color-silver-700: #f3f4f6;
+    --color-indigo-100: #3730a3;
+    --color-indigo-700: #e0e7ff;
+
+    --color-red-100: #da262624;
+    --color-red-700: #da2626;
+    --color-red-800: #991b1b;
+
+    --backdrop-color: rgba(255, 255, 255, 0.1);
+
+    --shadow-sm: 2px 4px 15px rgba(65, 65, 63, 0.1);
+    --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+
+    --border-radius-xs: 5px;
+    --border-radius-sm: 10px;
+    --border-radius-md: 15px;
+    --border-radius-lg: 20px;
+
+    /* For dark mode */
+    --image-grayscale: 0;
+    --image-opacity: 100%;
+}
+
+span,
+a,
+button {
+    display: inline-block;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    /* word-wrap: break-word; */
+    /* Creating animations for dark mode */
+    transition: background-color 0.3s, border 0.3s;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "poppins";
+    color: var(--color-grey-700);
+    font-weight: 400;
+    transition: color 0.3s, background-color 0.3s;
+    min-height: 100vh;
+    /* overflow: hidden; */
+    /* height: 7000px; */
+    line-height: 1.5;
+    font-size: 1.4rem;
+    background: var(--color-grey-0);
+    position: relative;
+    direction: ltr;
+}
+.dark-mode body {
+    background: #111827;
+}
+body:lang(ar) {
+    direction: rtl;
+}
+/* .ar body{
+    font-family: "tajwal", sans-serif;
+    
+  } */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 2px grey;  */
+    border-radius: 10px;
+    background: #faf9f5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ece4c4;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fbe695;
+}
+
+.light-bg-green {
+    background: var(--color-green-100);
+}
+.light-bg-red {
+    background: var(--color-red-100);
+}
+.light-bg-yellow {
+    background: var(--color-yellow-100);
+}
+.light-bg-blue {
+    background: var(--color-blue-100);
+}
+.light-bg-pink {
+    background: var(--color-pink-100);
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+*:disabled {
+    cursor: not-allowed;
+}
+
+select:disabled,
+input:disabled {
+    background-color: var(--color-grey-200);
+    color: var(--color-grey-500);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--color-brand-600);
+    outline-offset: -1px;
+}
+
+/* Parent selector, finally 😃 */
+button:has(svg) {
+    line-height: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    /* hyphens: auto; */
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+
+    /* For dark mode */
+    filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
+}
+
+/* FOR DARK MODE*/
+
+.light-mode:root {
+    /* Indigo */
+    --color-brand-50: #fcf8ff;
+    --color-brand-100: #7553eb1c;
+    --color-brand-200: #c4b5fd;
+    --color-brand-500: #a78bfb;
+    --color-brand-600: #7c3aed;
+    --color-brand-700: #5b21b6;
+    --color-brand-800: #4c1c95;
+    --color-brand-900: #3c2b7d;
+
+    /* Grey */
+    --color-grey-0: #fff;
+    --color-grey-20: #f7f7f7;
+    --color-grey-50: #f5f5f5;
+    --color-grey-100: #d9d9d9;
+    --color-grey-200: #d4d4d4;
+    --color-grey-300: #a1a1a1;
+    --color-grey-400: #737373;
+    --color-grey-500: #41413f;
+    --color-grey-600: #262625;
+    --color-grey-700: #121212;
+
+    --backdrop-color: rgba(0, 0, 0, 0.3);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.4);
+
+    --image-grayscale: 10%;
+    --image-opacity: 90%;
+}
+
+/*********************************************
+ animations
+*********************************************/
+
+.animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fade {
+    -webkit-animation-name: fade;
+    animation-name: fade;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-left {
+    -webkit-animation-name: fade-left;
+    animation-name: fade-left;
+}
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translatex(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+.dotAnimate::after {
+    -webkit-animation: pulse 1.5s ease-out infinite;
+    animation: pulse 1.5s ease-out infinite;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.7);
+    }
+}
+
+.fade2 {
+    -webkit-animation-name: fade2;
+    animation-name: fade2;
+}
+@keyframes fade2 {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
