@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <NavStyle>
-            <div className="max-w-screen-xl mx-auto px-10 py-3 flex justify-between items-center ">
+            <div className=" py-6 container flex justify-between items-center ">
                 <Link className="flex items-center gap-5">
                     <div className=" w-20">
                         <img src="/logo.svg" alt="logo" />

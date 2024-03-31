@@ -9,7 +9,7 @@ import { useLocation } from "react-router";
 import { styled } from "styled-components";
 
 const StyleBody = styled.div`
-    min-height: 90vh;
+    min-height: 93vh;
 `;
 
 const queryClient = new QueryClient({
