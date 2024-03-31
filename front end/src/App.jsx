@@ -28,10 +28,6 @@ function App() {
                 <BrowserRouter>
                     <Routes>
                         <Route element={<HomeLayout />}>
-                            <Route
-                                index
-                                element={<Navigate replace to={"/"} />}
-                            />
                             <Route path="/" element={<Home />} />
                         </Route>
 
