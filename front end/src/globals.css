@@ -49,6 +49,7 @@ button {
     /* word-wrap: break-word; */
     /* Creating animations for dark mode */
     transition: background-color 0.3s, border 0.3s;
+    text-transform: capitalize;
 }
 
 html {
@@ -161,6 +162,9 @@ img {
     margin: 0 auto;
     padding-right: 1rem;
     padding-left: 1rem;
+}
+.section-padding {
+    padding: 10rem 0;
 }
 /*********************************************
  animations
