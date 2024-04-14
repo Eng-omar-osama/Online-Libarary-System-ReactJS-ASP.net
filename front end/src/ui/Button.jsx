@@ -10,12 +10,12 @@ const sizes = {
     `,
     medium: css`
         font-size: 1.4rem;
-        padding: 0.8rem 1.6rem;
+        padding: 0.8rem 1.2rem;
         font-weight: 500;
     `,
     large: css`
         font-size: 1.6rem;
-        padding: 1rem 3rem;
+        padding: 1rem 1.5rem;
         font-weight: 500;
     `,
 };
@@ -64,6 +64,7 @@ const Button = styled.button`
     z-index: 2;
     overflow: hidden;
     transition: 0.3s all ease;
+    min-width: 15rem;
 `;
 Button.defaultProps = {
     size: "large",
