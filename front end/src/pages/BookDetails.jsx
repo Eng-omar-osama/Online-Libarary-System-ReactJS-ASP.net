@@ -6,7 +6,13 @@ import React from "react";
 const BookDetails = () => {
     return (
         <PageLayout>
-            <MainHeroSection />
+            <MainHeroSection
+                data={{
+                    title: "book name",
+                    subtitle: "book details",
+                    bgImage: "/imgs/home_pages/hero.jpg",
+                }}
+            />
 
             <div className="container my-12">
                 <BookMainDetails />

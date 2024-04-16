@@ -24,7 +24,7 @@ const Hero = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ex, consectetur dolor, quaerat consequuntur voluptatum
                     </p>
-                    <Link className="mt-12">
+                    <Link className="mt-12" to="/books">
                         <Button variation="secondary">shop now</Button>
                     </Link>
                 </div>
