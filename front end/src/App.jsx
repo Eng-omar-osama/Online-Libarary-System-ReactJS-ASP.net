@@ -14,6 +14,7 @@ import Home from "@pages/Home";
 import NotFound from "@pages/NotFound";
 import Login from "@pages/Login";
 import SignUp from "@pages/SignUp";
+import AllBooks from "./pages/AllBooks";
 
 function App() {
     const queryClient = new QueryClient({
@@ -37,6 +38,7 @@ function App() {
                                 path="/books/:id"
                                 element={<BookDetails />}
                             />
+                            <Route path="/books" element={<AllBooks />} />
                         </Route>
 
                         <Route path="/login" element={<Login />} />
