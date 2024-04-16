@@ -180,6 +180,7 @@ img {
     -webkit-animation-name: fade;
     animation-name: fade;
 }
+
 @keyframes fadeInDown {
     0% {
         opacity: 0;

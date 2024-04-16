@@ -10,6 +10,7 @@ import HomeLayout from "./ui/HomeLayout";
 import NotFound from "./pages/NotFound";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Home from "./pages/Home";
+import BookDetails from "./pages/BookDetails";
 
 function App() {
     const queryClient = new QueryClient({
@@ -29,6 +30,10 @@ function App() {
                     <Routes>
                         <Route element={<HomeLayout />}>
                             <Route path="/" element={<Home />} />
+                            <Route
+                                path="/books/:id"
+                                element={<BookDetails />}
+                            />
                         </Route>
 
                         {/** admin routes **/}
