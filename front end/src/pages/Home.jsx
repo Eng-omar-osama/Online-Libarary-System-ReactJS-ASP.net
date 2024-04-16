@@ -2,14 +2,15 @@ import React from "react";
 import Hero from "../features/home-pages/home/Hero";
 import About from "../features/home-pages/home/About";
 import NewProducts from "../features/home-pages/home/NewProducts";
+import PageLayout from "@/ui/PageLayout";
 
 const Home = () => {
     return (
-        <div>
+        <PageLayout>
             <Hero />
             <About />
             <NewProducts />
-        </div>
+        </PageLayout>
     );
 };
 

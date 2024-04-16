@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <NavStyle>
             <div className=" py-6 container flex justify-between items-center ">
-                <Link className="flex items-center gap-5">
+                <Link className="flex items-center gap-5" to={"/"}>
                     <div className=" w-20">
                         <img src="/logo.svg" alt="logo" />
                     </div>
